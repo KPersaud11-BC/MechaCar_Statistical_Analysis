@@ -62,9 +62,9 @@ The table shows that the p-value is 0.06, which means we cannot reject the null 
 3. Lot 3 has a p-value of 0.04. We reject the null hypothesis, and accept that there is a statistical difference with this particular lot.
 
 ## Study Design: MechaCar vs Competition
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+Finally, I was asked to create a theoretical statistical study that can quantify how the MechaCar performs against the competition. I will consider the following metrics (fuel efficiency and cost), and determine the null and alternative hypotheses, statistical test, and data needed.
+
+**Fuel Efficiency**
+1. What is the null hypothesis or alternative hypothesis? The null hypothesis would be MechaCar's prototypes' fuel efficiency is similar to that of competitors' vehicles. The alternative hypothesis is that there is a statistical difference between MechaCar's fuel efficiency and its competitors.
+2. What statistical test would you use to test the hypothesis? And why? I will use an ANOVA test, which is used to compare the means of a continuous numerical variable across a number of groups. Since we are testing one variable across different groups, I will use a one-way ANOVA.
+3. What data is needed to run the statistical test? I would need to collect the fuel economy in mpg of various competitor brands to compare against MechaCar. I also want to ensure that the comparison is made between cars of a similar class. So I would also need a breakdown of the fuel economy by car class for MechaCar and competitor companies.
