@@ -41,7 +41,25 @@ We look at the Variance column for each table. **In total**, the variance is 62.
 However, for **each lot individually**, Lots 1 and 2 fall below the threshold, but Lot 3 exceeds it at 170.29.
 
 ## T-Tests on Suspension Coils
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+I then perfomed a t-test of the total summary and the lot summary to determine if there was a statistical difference between the data sets and a standard population. The population mean for this data was 1,500.
+
+**Total Summary T-Test**
+
+![T_Test_All_Lots](https://user-images.githubusercontent.com/84286467/134763081-7b214dc5-2c23-436d-a66a-fc7976b731af.PNG)
+
+The table shows that the p-value is 0.06, which means we cannot reject the null hypothesis. Therefore the data for the total summary is statistically similar to a normal distribution.
+
+**Lot Summary T-Tests**
+
+![T_Test_Lot1](https://user-images.githubusercontent.com/84286467/134763248-bd7e9ee7-c420-44f2-951f-a3f0ce0ee399.PNG)
+
+![T_Test_Lot2](https://user-images.githubusercontent.com/84286467/134763252-569c228a-f8a3-4371-b1a9-a244b62c3ba7.PNG)
+
+![T_Test_Lot3](https://user-images.githubusercontent.com/84286467/134763255-6870f50b-f945-4a79-a742-70a25deed049.PNG)
+
+1. Lot 1 has a p-value of 1, which means we can't reject the null hypothesis.
+2. Lot 2 has a p-value of 0.61, which means we can't reject the null hypothesis.
+3. Lot 3 has a p-value of 0.04. We reject the null hypothesis, and accept that there is a statistical difference with this particular lot.
 
 ## Study Design: MechaCar vs Competition
 Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
