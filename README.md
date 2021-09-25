@@ -9,7 +9,7 @@ AutosRUs’ newest prototype, the MechaCar, is suffering from production trouble
 - Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
 
 ## Resources
-R Studio, tidyverse, ggplot2
+R Studio, tidyverse, ggplot2, MechaCar MPG dataset, Suspension Coil dataset
 
 ## Linear Regression to Predict MPG
 Using multiple linear regression, I created a linear model that compares the MPG to various various to determine if there were non-random relationships. This is the formula and the resulting table.
@@ -23,7 +23,7 @@ Using multiple linear regression, I created a linear model that compares the MPG
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? To determine how effectively the model predicts MPG, we refer to the Multiple R-squared value of 0.7149. This means that the model predicts mpg correctly 71.49% of the time. This may or may not be effective based on the company's standards. However, I would consider this effective in predicting MPG.
 
 ## Summary Statistics on Suspension Coils
-The next deliverable required creating summary statistics of data from multiple production lots. Using the ```group_by()``` and ```summarize()``` functions, I created a total summary table and a lot summary table showing the various statistics.
+The next deliverable required creating summary statistics of Suspension Coil PSI data from multiple production lots. Using the ```group_by()``` and ```summarize()``` functions, I created a total summary table and a lot summary table showing the various statistics.
 
 **Total Summary**
 
@@ -35,6 +35,10 @@ The next deliverable required creating summary statistics of data from multiple 
 
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+We look at the Variance column for each table. **In total**, the variance is 62.29, which is below the threshold.
+
+However, for **each lot individually**, Lots 1 and 2 fall below the threshold, but Lot 3 exceeds it at 170.29.
 
 ## T-Tests on Suspension Coils
 briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
