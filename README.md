@@ -19,11 +19,20 @@ Using multiple linear regression, I created a linear model that compares the MPG
 ![Summary Statistics](https://user-images.githubusercontent.com/84286467/134757821-42718ce5-79ee-4ffc-90ac-bc018846a769.PNG)
 
 - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset? To determine the variables that provided a non-random amount of variance to the mpg values in the dataset, we look at the Pr(>|t|) column and see what is less that 0.05. In this case, ground clearance and vehicle length (along with the intercept), provided non-random amounts of variance to the linear model. In other words, they have a significant impact on MPG.
-- Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+- Is the slope of the linear model considered to be zero? Why or why not? The p-value of this linear model is 5.35e-11, which is less than the significance level of 0.05. Therefore we reject the null hypothesis, which states that the slope of the model is zero. Thus the slope is not zero.
+- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? To determine how effectively the model predicts MPG, we refer to the Multiple R-squared value of 0.7149. This means that the model predicts mpg correctly 71.49% of the time. This may or may not be effective based on the company's standards. However, I would consider this effective in predicting MPG.
 
 ## Summary Statistics on Suspension Coils
-write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+The next deliverable required creating summary statistics of data from multiple production lots. Using the ```group_by()``` and ```summarize()``` functions, I created a total summary table and a lot summary table showing the various statistics.
+
+**Total Summary**
+
+![Total_Summary](https://user-images.githubusercontent.com/84286467/134759056-b59b4a1a-8742-46b0-b59e-b61d6ddab78c.PNG)
+
+**Lot Summary**
+
+![Lot_Summary](https://user-images.githubusercontent.com/84286467/134759057-74d44ea7-356d-4909-8754-a2a789f46caa.PNG)
+
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
