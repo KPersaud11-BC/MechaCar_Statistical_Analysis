@@ -1,20 +1,25 @@
 # MechaCar_Statistical_Analysis by Kieran Persaud
 
 ## Overview of MechaCar Statistical Analysis
-A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has asked for a review of the production data for insights that may help the manufacturing team. I am tasked with the following;
 
-In this challenge, you’ll help Jeremy and the data analytics team do the following:
+- Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
+- Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
+- Run t-tests to determine if the manufacturing lots are statistically different from the mean population
+- Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
 
-Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
-Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
-Run t-tests to determine if the manufacturing lots are statistically different from the mean population
-Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
+## Resources
+R Studio, tidyverse, ggplot2
 
 ## Linear Regression to Predict MPG
-write a short summary using a screenshot of the output from the linear regression, and address the following questions:
+Using multiple linear regression, I created a linear model that compares the MPG to various various to determine if there were non-random relationships. This is the formula and the resulting table.
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not?
+```summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar_table))```
+
+![Summary Statistics](https://user-images.githubusercontent.com/84286467/134757821-42718ce5-79ee-4ffc-90ac-bc018846a769.PNG)
+
+- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset? To determine the variables that provided a non-random amount of variance to the mpg values in the dataset, we look at the Pr(>|t|) column and see what is less that 0.05. In this case, ground clearance and vehicle length (along with the intercept), provided non-random amounts of variance to the linear model. In other words, they have a significant impact on MPG.
+- Is the slope of the linear model considered to be zero? Why or why not?
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 ## Summary Statistics on Suspension Coils
